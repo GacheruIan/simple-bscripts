@@ -6,7 +6,12 @@
 #runscript in shell
 ##########################
 
+#set -exo pipefail
 set -x #debug mode
+
+set -o #exitscript if pipe encounters an error
+
+set -e #exit script if any other error
 
 #echo memory
 free -g
@@ -20,4 +25,7 @@ nproc
 
 
 echo "system performance"
-top -b -n 1 
+top -b -n 1
+
+ps -ef | grep chrome #check chrome every time
+##################./process.sh | grep chrome | awk '{print $1,$2,$10}'######## 
