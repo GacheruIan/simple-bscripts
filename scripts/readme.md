@@ -26,3 +26,5 @@ The scripts demonstrates the use of common file test operators in Bash. It check
 # -f: Checks if the file is a regular file.
 # -g: Checks if the file has its set group ID (SGID) bit set.
 # -k: Checks if the file has the sticky bit set.
+
+# Relational Operators (Works with numbers) 
